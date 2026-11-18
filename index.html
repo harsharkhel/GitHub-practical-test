@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harsh Arkhel | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="box bar">
+      <a href="#home" class="logo">Harsh Arkhel</a>
+      <button id="menu-btn">Menu</button>
+      <nav id="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Introduction -->
+  <section id="home" class="hero">
+    <div class="box">
+      <h1><span class="tag">student_developer 0.99</span>Harsh Arkhel</h1>
+      <p class="big">I build AI/ML and computer vision projects, and the backends that go with them.</p>
+      <p>2nd-year B.Tech CS student at Alta School of Technology, Pune. Looking for an AI/ML or software engineering internship.</p>
+      <a href="#projects" class="btn">See my projects</a>
+      <a href="#contact" class="btn light">Get in touch</a>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about">
+    <div class="box">
+      <h2>About me</h2>
+      <p>I'm a second-year Computer Science student who learns best by building things that actually run, like controlling my Mac with hand gestures or chatting with my own PDFs.</p>
+      <p>I work in machine learning, computer vision and backend development. I have also built working prototypes in three hackathons (Hackwarts, Scaler School of Technology and Vedam School of Technology).</p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="grey">
+    <div class="box">
+      <h2>Skills</h2>
+      <ul>
+        <li><b>Languages:</b> Python, Java, JavaScript, C, SQL, HTML, CSS</li>
+        <li><b>AI and ML:</b> scikit-learn, NLP, LLM integration, RAG, LangChain</li>
+        <li><b>Computer vision:</b> OpenCV, MediaPipe, gesture recognition</li>
+        <li><b>Backend:</b> FastAPI, Spring Boot, REST APIs, Firebase</li>
+        <li><b>Data:</b> NumPy, Pandas, data preprocessing</li>
+        <li><b>Other:</b> Data structures and algorithms, React, Git, GitHub</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="box">
+      <h2>Projects</h2>
+
+      <div class="filters">
+        <button class="filter active" data-type="all">All</button>
+        <button class="filter" data-type="ml">AI and ML</button>
+        <button class="filter" data-type="cv">Computer vision</button>
+        <button class="filter" data-type="backend">Backend</button>
+      </div>
+
+      <div class="grid">
+        <div class="project" data-type="ml">
+          <h3>UPI Fraud Detection</h3>
+          <p>An ML pipeline that preprocesses transaction data and trains a classifier to flag fraudulent UPI transactions.</p>
+          <small>Python, Pandas, scikit-learn</small>
+        </div>
+
+        <div class="project" data-type="ml">
+          <h3>NotebookLM-Style RAG App</h3>
+          <p>Chat with your own PDFs. Answers are grounded in the documents you upload.</p>
+          <small>Python, LangChain, LLMs</small>
+        </div>
+
+        <div class="project" data-type="cv">
+          <h3>Hand-Controlled Mac</h3>
+          <p>Real-time webcam hand tracking that turns gestures into computer controls.</p>
+          <small>Python, OpenCV, MediaPipe</small>
+        </div>
+
+        <div class="project" data-type="cv">
+          <h3>Classroom Analytics</h3>
+          <p>Counts people in a classroom from camera feeds and combines it with student data to study attendance. (In progress)</p>
+          <small>Python, OpenCV, SQL</small>
+        </div>
+
+        <div class="project" data-type="backend">
+          <h3>NEXUS AI Backend</h3>
+          <p>Backend for a Gemini-powered app that turns messy information into safe, structured actions. (In progress)</p>
+          <small>Spring Boot, FastAPI, Firebase</small>
+        </div>
+
+        <div class="project" data-type="backend">
+          <h3>DevCheck Testing Platform</h3>
+          <p>Functional, performance and load testing for web apps, APIs and Android apps. Simulated 500+ concurrent users.</p>
+          <small>Testing, APIs, load simulation</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="grey">
+    <div class="box">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:harsharkhel123@gmail.com">harsharkhel123@gmail.com</a><br>
+         <a href="https://github.com/harsharkhel">GitHub</a> |
+         <a href="https://linkedin.com/in/harsharkhel">LinkedIn</a> | Pune, India</p>
+
+      <form id="form">
+        <input id="name" placeholder="Your name">
+        <input id="email" placeholder="Your email">
+        <textarea id="message" rows="4" placeholder="Message"></textarea>
+        <button class="btn">Send message</button>
+        <p id="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer>&copy; <span id="year"></span> Harsh Arkhel</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
